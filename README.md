@@ -18,6 +18,10 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 - https://github.com/etnetapp-dev/ipo_pdfparsing_server
 - api_server.py
 
+
+### Target content in IPO prospectus
+![](pic/ipo_prospectus_toc.JPG)
+
 # key components of repository
 - raw textual data and labeled data (data folder) 
 - corpus creation and textual data conversion to IOBES format (preprocessing folder)
