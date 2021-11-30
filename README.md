@@ -43,6 +43,9 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 - Please edit the data and model folder path according to the google drive file structures.
 
 # model testing and deployment
+- There are 3 key files to be stored locally for re-usage and testing of the NER model after training , including, model.pth, sent_vocab.json and tag_vocab.json.
+- The pytorch 1.8 cpu version must be installed in local machine to run the model.
+
 
 ### Key model component for deployment and testing
 ![](pic/model_conponents.JPG)
