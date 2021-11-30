@@ -18,17 +18,23 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 
 
 # key components of repository
-- raw text data and labeled 
-- corpus creation and textual data conversion to IOBES format
-- model training
-- model testing
+- raw textual data and labeled data (data folder) 
+- corpus creation and textual data conversion to IOBES format (preprocessing folder)
+- model training (train jupyter notebook)
+- model testing (model_test.py)
 
 
 # Corpus creation
-- https://github.com/Wadaboa/ner-annotator
-
+- 1. extract all texts and paragraphs from  "parties involved" and "underwriting" in English version of IPO prospectus of HKEX and output result to txt files
+- 2. load the txt data int excel and label records by columns or you can also label the data by using tools e.g. https://github.com/Wadaboa/ner-annotator
+- 3. load labelled data into txt file and convert the textual data into iob format ('B'=Begin, 'I'=inter, O='omit') by the script, "text2iob1.py" in the preprocessing folder
+- 4. convert the data from iob format into IOBES format (('B'=Begin, 'I'=inter,'E'=End, 'S'=Single , O='omit')
+- If using other Labelling tools e.g. https://github.com/Wadaboa/ner-annotator, please specify to apply IOBES format when extracting output.
 
 # model training
-
+- Detail training descriptions and documentation are all specified inside the train.ipynb. The train.ipynb is executed via google colab pro platform on which,  all major dependenies,  e.g. pytorch and sklearn, are pre-installed , thus, no open-library installation is required on google colab platform.
+- The overall training process varies from 2 hours to 4 hours, subject to the volumn of data and the type of GPU instances (Google colab randomly assigns Nvidia K80 or more advanced version to the notebook)
+- Please edit the data and model folder path according to the google drive file structures.
 
 # model testing and deployment
+-
