@@ -19,7 +19,7 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 
 
 # Corpus creation
-
+- https://github.com/Wadaboa/ner-annotator
 
 
 # model training
