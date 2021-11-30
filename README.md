@@ -31,10 +31,10 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 - 4. convert the data from iob format into IOBES format (('B'=Begin, 'I'=inter,'E'=End, 'S'=Single , O='omit')
 - If using other Labelling tools e.g. https://github.com/Wadaboa/ner-annotator, please specify to apply IOBES format when extracting output.
 
-# Manual data labelling (in excel file)
+### Manual data labelling (in excel file)
 ![](pic/rawdata.JPG)
 
-# Corpus format : Characters and tags are seperated by \t
+### Corpus format : Characters and tags are seperated by \t
 ![](pic/processdata.JPG)
 
 # model training
@@ -43,4 +43,7 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 - Please edit the data and model folder path according to the google drive file structures.
 
 # model testing and deployment
+
+### Key model component for deployment and testing
+![](pic/model_conponents.JPG)
 -
