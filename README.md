@@ -31,6 +31,12 @@ The corpus is targeting English version of IPO prospectus of HKEX ,thus, no Chin
 - 4. convert the data from iob format into IOBES format (('B'=Begin, 'I'=inter,'E'=End, 'S'=Single , O='omit')
 - If using other Labelling tools e.g. https://github.com/Wadaboa/ner-annotator, please specify to apply IOBES format when extracting output.
 
+# Manual data labelling (in excel file)
+![](pic/rawdata.JPG)
+
+# Corpus format : Characters and tags are seperated by \t
+![](pic/processdata.JPG)
+
 # model training
 - Detail training descriptions and documentation are all specified inside the train.ipynb. The train.ipynb is executed via google colab pro platform on which,  all major dependenies,  e.g. pytorch and sklearn, are pre-installed , thus, no open-library installation is required on google colab platform.
 - The overall training process varies from 2 hours to 4 hours, subject to the volumn of data and the type of GPU instances (Google colab randomly assigns Nvidia K80 or more advanced version to the notebook)
